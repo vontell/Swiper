@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.wear.widget.BoxInsetLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/dark_grey"
+    android:padding="@dimen/box_inset_layout_padding"
+    tools:context="org.vontech.interdirect.MainActivity"
+    tools:deviceIds="wear">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:orientation="vertical"
+            android:padding="@dimen/inner_frame_layout_padding"
+            app:boxedEdges="all">
+
+            <EditText
+                android:id="@+id/ipEdit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="IP UNKNOWN"
+                android:textAlignment="center" />
+
+            <Button
+                android:id="@+id/reconnectButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:elevation="20dp"
+                android:text="Reconnect" />
+
+            <Button
+                android:id="@+id/voiceButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:elevation="20dp"
+                android:text="Voice" />
+
+            <EditText
+                android:id="@+id/timerEdit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:hint="Timer"
+                android:textAlignment="center" />
+
+            <Button
+                android:id="@+id/startTimerButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:elevation="20dp"
+                android:text="Start Timer" />
+
+            <Button
+                android:id="@+id/resetTimerButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="64dp"
+                android:elevation="20dp"
+                android:text="Reset Timer" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</android.support.wear.widget.BoxInsetLayout>
+
